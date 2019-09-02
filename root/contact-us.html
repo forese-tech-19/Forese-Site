@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | FORESE</title>
+    <link rel="icon" type="image/png" href="assets/img/site-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap cdn -->
+    <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--Script-->
+    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+<div w3-include-html="_header-white.html"></div> 
+
+
+<div class="a-ct-sctn1 container-fluid text-center">
+    <div class="a-ct-title-wrapper">
+        <div class="a-ct-title g-font-poppins h2 g-white-clr g-fw-700">
+            Get in Touch
+        </div>
+    </div>
+    <div class="a-ct-para-wrapper">
+        <div class="a-ct-para g-font-poppins h4 g-white-clr g-fw-700">
+            Emails can also be sent to forese@svce.ac.in addressed to Mr Muraleedharan, Chief Placement Office of SVCE.
+        </div>
+    </div>
+    <div class="a-ct-cntct-wrapper">
+        <div class="a-ct-cntct g-font-maisonneue g-fw-400">
+            <a href="tel:+91-8668088824">+91 8668088824</a> &nbsp;|&nbsp;
+            <a href="tel:+91-12345678">+91 12345678</a>
+        </div>
+    </div>
+    <div class="a-ct-cntct-ml-wrapper">
+        <div class="a-ct-cntct-ml">
+            <a href="mailto:forese@svce.ac.in" class="g-font-maisonneue">forese@gmail.com</a>
+        </div>
+    </div>
+    <div class="a-ct-social-icon-wrapper">
+        
+    </div>
+</div>
+
+
+<div class="a-ct-sctn2 container text-center">
+    <div class="a-ct-sctn2-title-wrapper">
+        <div class="a-ct-sctn2-title g-font-poppins g-black-clr g-fw-800">
+            We’ll get back to you…
+        </div>
+    </div>
+    <div class="a-ct-subhd-wrapper">
+        <div class="a-ct-subhd g-font-maisonneue h6 g-fw-400">
+            Complete our form and we’ll get right back to you.
+        </div>
+    </div>
+    <div class="a-ct-frm-wrapper">
+        <form class="a-ct-frm" id="gContactFrom">
+            <div class="form-inline">
+                <input type="text" class="form-control inpt" placeholder="Name" name="name" required>
+                <input type="text" class="form-control inpt" placeholder="Company" name="company" required>
+            </div>
+            <div class="form-inline">
+                <input type="email" class="form-control inpt" placeholder="Email" name="email" required>
+                <input type="text" class="form-control inpt" placeholder="Phone" name="phone" required>
+            </div>
+            <div class="form-inline a-ct-frm-textarea">
+                 <textarea rows="6" class="form-control" placeholder="Enquiry" name="enquiry" 
+                           required></textarea>
+            </div>
+            <div class="a-ct-link-wrapper">
+                 <button type="submit" class="a-ct-form-submit">
+                     <span class="g-lnkbtn-txt-lg g-font-poppins h5 g-black-clr g-fw-800">Submit Now</span>
+                 </button>
+            </div>
+        </form>
+    </div>
+    <div class="a-ct-cnt-wrapper">
+        <div class="a-ct-cnt g-font-poppins g-black-clr g-fw-800">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices bibendum mollis. Sed aliquet, enim at vulputate porttitor, felis nunc vehicula ante, blandit lobortis mi massa  &amp; creative thinking
+        </div>
+    </div>
+</div> 
+
+
+<div class="container-fluid g-black-bg">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <div class="t-hm-s6-lctn text-center">
+                <div class="t-hm-s6-addrs g-white-bg g-font-poppins h5 g-fw-700">
+                    Pennalur Village, Bengaluru - Chennai Highway, Tk, Sriperumbudur, Tamil Nadu 602117
+                </div>
+                <div class="t-hm-s6-addrs-trangle text-center">
+                    <img src="assets/img/home/sec6-location-triangle.png" alt="icon">
+                </div>
+            </div>
+        </div>
+
+        <!-- Map -->
+        <div id="gGoogleMapEmbed" class="t-hm-gmap"></div>
+    </div>
+</div>
+
+
+
+
+
+<div class="modal fade g-contactform-resp-modal" role="dialog" id="gContactFromRespModal">
+<div class="modal-dialog">
+    <div class="modal-content g-red-bg g-white-clr text-center g-no-border g-no-borderradius">
+        <div class="modal-body">
+            <div id="gContactFromRespModalText">processing. please wait...</div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Map script -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWFRTumnV6DFDfwhtT8UjSdXSAC0pif78&amp;callback=gGoogleMap"></script>
+<!-- End of Map script -->
+
+
+<!-- Contact form script -->
+<script>
+$(function(){
+$(document).on('submit', "#gContactFrom", function(eform) {
+    eform.preventDefault();
+    $("#gContactFromRespModalText").text("processing. please wait...");
+    $('#gContactFromRespModal').modal('show');
+    $.ajax({
+        type: "GET",
+        url: "PHPMailer-5.2-stable/mail/contactform-receiver.php",
+        dataType: "json",
+        data: { name: $(this).find("input[name='name']").val(), 
+                company: $(this).find("input[name='company']").val(), 
+                email: $(this).find("input[name='email']").val(), 
+                phone: $(this).find("input[name='phone']").val(), 
+                enquiry: $(this).find("textarea[name='enquiry']").val(), },
+
+        success: function(result) {
+            $("#gContactFromRespModalText").text("Message successfully sent. We will contact you asap.");
+            $('#gContactFromRespModal').modal('show');
+        },
+        error: function(e) {
+            $("#gContactFromRespModalText").text("Ajax error. pls reload and try again or contact us");
+            $('#gContactFromRespModal').modal('show');
+        }
+    });
+});
+});
+</script>
+<!-- End of Contact form script -->
+
+
+</body>
+
+</html>
