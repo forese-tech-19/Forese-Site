@@ -50,6 +50,11 @@
 		bottom: 10px;
 		right: 10px;
 		background:rgba(0,0,0,.8);
+		transform: scaleY(0);
+		transition: transform .5s;
+	}
+	.container .box:hover .details{
+		transform: scaleY(1);
 	}
 	.container .box .details .content{
 		position: absolute;
@@ -59,6 +64,16 @@
 		padding: 15px;
 		color: #fff;
 	}
+	.container .box .details .content h2{
+		margin: 0;
+		padding: 0;
+		font-size: 30px;
+		color: #ff0;
+	}
+	.container .box .details .content p{
+		margin: 10px 0 0;
+		padding: 0;
+		
 </style>
 <body>
 
