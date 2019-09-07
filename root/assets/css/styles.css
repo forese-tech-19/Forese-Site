@@ -404,42 +404,46 @@ body{
     outline: none;
 }
 .t-hm-sldr1-bg{
-    background-image: url(../img/home/mocks.jpg);
+    background-image: url(../img/home/sec2-slider1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position:center center;
 	overflow: hidden; 
 }
 .t-hm-sldr2-bg{
-    background-image: url(../img/home/GD.png);
+    background-image: url(../img/home/sec2-slider2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position:center center;
 	overflow: hidden;
 }
 .t-hm-sldr3-bg{
-    background-image: url(../img/home/aptitude.jpg);
+    background-image: url(../img/home/sec2-slider3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position:center center;
 	overflow: hidden;
 }
 .t-hm-sldr4-bg{
+<<<<<<< HEAD
     background-image: url(../img/home/ForEd.png);
+=======
+    background-image: url(../img/home/sec2-slider4.jpg);
+>>>>>>> parent of 8c7a689... slides update
     background-size: cover;
     background-repeat: no-repeat;
 	background-position:center center;
 	overflow: hidden;
 }
 .t-hm-sldr5-bg{
-    background-image: url(../img/home/GD.png);
+    background-image: url(../img/home/sec2-slider5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 	background-position:center center;
 	overflow: hidden;
 }
 .t-hm-sldr6-bg{
-    background-image: url(../img/home/aptitude.jpg);
+    background-image: url(../img/home/sec2-slider6.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 	background-position:left center;
