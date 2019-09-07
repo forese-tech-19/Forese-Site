@@ -36,17 +36,16 @@
     </div>
     <div class="a-ct-cntct-wrapper">
         <div class="a-ct-cntct g-font-maisonneue g-fw-400">
-            <a href="tel:+91-8668088824">+91 8668088824</a> &nbsp;|&nbsp;
-            <a href="tel:+91-12345678">+91 12345678</a>
+            <a href="tel:+91-44-27152000 ">+91-44-27152000 </a>
         </div>
     </div>
     <div class="a-ct-cntct-ml-wrapper">
         <div class="a-ct-cntct-ml">
-            <a href="mailto:forese@svce.ac.in" class="g-font-maisonneue">forese@gmail.com</a>
+            <a href="mailto:forese@svce.ac.in" class="g-font-maisonneue">forese@svce.ac.in</a>
         </div>
     </div>
     <div class="a-ct-social-icon-wrapper">
-        
+
     </div>
 </div>
 
@@ -54,7 +53,7 @@
 <div class="a-ct-sctn2 container text-center">
     <div class="a-ct-sctn2-title-wrapper">
         <div class="a-ct-sctn2-title g-font-poppins g-black-clr g-fw-800">
-            We’ll get back to you…
+            Have Any Queries?
         </div>
     </div>
     <div class="a-ct-subhd-wrapper">
@@ -73,7 +72,7 @@
                 <input type="text" class="form-control inpt" placeholder="Phone" name="phone" required>
             </div>
             <div class="form-inline a-ct-frm-textarea">
-                 <textarea rows="6" class="form-control" placeholder="Enquiry" name="enquiry" 
+                 <textarea rows="6" class="form-control" placeholder="Enquiry" name="enquiry"
                            required></textarea>
             </div>
             <div class="a-ct-link-wrapper">
@@ -85,10 +84,10 @@
     </div>
     <div class="a-ct-cnt-wrapper">
         <div class="a-ct-cnt g-font-poppins g-black-clr g-fw-800">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ultrices bibendum mollis. Sed aliquet, enim at vulputate porttitor, felis nunc vehicula ante, blandit lobortis mi massa  &amp; creative thinking
+          Very well coordinated. Full marks to the organizing team.
         </div>
     </div>
-</div> 
+</div>
 
 
 <div class="container-fluid g-black-bg">
@@ -140,10 +139,10 @@ $(document).on('submit', "#gContactFrom", function(eform) {
         type: "GET",
         url: "PHPMailer-5.2-stable/mail/contactform-receiver.php",
         dataType: "json",
-        data: { name: $(this).find("input[name='name']").val(), 
-                company: $(this).find("input[name='company']").val(), 
-                email: $(this).find("input[name='email']").val(), 
-                phone: $(this).find("input[name='phone']").val(), 
+        data: { name: $(this).find("input[name='name']").val(),
+                company: $(this).find("input[name='company']").val(),
+                email: $(this).find("input[name='email']").val(),
+                phone: $(this).find("input[name='phone']").val(),
                 enquiry: $(this).find("textarea[name='enquiry']").val(), },
 
         success: function(result) {
