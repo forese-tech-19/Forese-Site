@@ -1,403 +1,381 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Home | FORESE</title>
+      <link rel="icon" type="image/png" href="assets/img/site-icon.png">
+      <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+      <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!-- Bootstrap cdn -->
+      <link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/css/styles.css">
+      <link rel="stylesheet" href="lib/styles.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+      <!--Script-->
+      <script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <script src="assets/js/script.js"></script>
+      <style type="text/css">
+         #loader {
+         position: fixed;
+         width: 100%;
+         height: 100vh;
+         z-index: 100;
+         top: 0;
+         left: 0;
+         overflow: visible;
+         background: #000 url('assets/loader.gif') no-repeat center center;
+         }
+      </style>
+   </head>
+   <body>
+      <script type="text/javascript">
+         var loader;
+         function loadNow(opacity) {
+         	if (opacity <=0) {
+         		displayContent();
+         	}
+         	else {
+         		loader.style.opacity = opacity;
+         		window.setTimeout(function(){
+         			loadNow(opacity - 0.05)
+         		}, 100);
+         	}
+         }
 
+         function displayContent() {
+         	loader.style.display = 'none';
+         	document.getElementById('content').style.display = 'block';
+         }
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Home | FORESE</title>
-	<link rel="icon" type="image/png" href="assets/img/site-icon.png">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
-	<link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Bootstrap cdn -->
-	<link rel="stylesheet" href="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="lib/styles.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/loader.css">
-	<!--Script-->
-	<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	<script src="assets/js/script.js"></script>
-	<style type="text/css">
-		#loader {
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	z-index: 100;
-	top: 0;
-	left: 0;
-	overflow: visible;
-	background: #000 url('assets/loader.gif') no-repeat center center;
-	}
-	</style>
-</head>
-
-
-<body>
-
-	<script type="text/javascript">
-		var loader;
-		function loadNow(opacity) {
-			if (opacity <=0) {
-				displayContent();
-			}
-			else {
-				loader.style.opacity = opacity;
-				window.setTimeout(function(){
-					loadNow(opacity - 0.05)
-				}, 100);
-			}
-		}
-
-		function displayContent() {
-			loader.style.display = 'none';
-			document.getElementById('content').style.display = 'block';
-		}
-
-		document.addEventListener("DOMContentLoaded", function(){
-			loader = document.getElementById('loader');
-			loadNow(1.5);
-		});
-	</script>
-
-
-	<div id="loader"></div>
-
-	<div class="g-black-bg">
-		<div class="t-hm-bnr-bg-video">
-			<video autoplay loop muted playsinline>
-				<source src="assets/video/home.mp4" type="video/mp4">
-				Your browser does not support the video tag. kindly update and try again.
-			</video>
-		</div>
-		<div class="t-hm-bnr-ttleandsicons">
-
-
-
-			<div class="t-hm-bnr-ttle h2 g-font-poppins g-white-clr g-fw-700 g-black-clr">
-				<span>We </span>
-				<div class="t-hm-bnr-ttle-scrltxt">
-					<span>Create </span>
-					<span>Provide</span>
-					<span>Inspire</span>
-					<span>Guide</span>
-					<span>Explore</span>
-					<span>are FORESE.</span>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container">
-		<div class="t-hm-s1-ttle h2 g-font-poppins g-black-clr g-fw-800">
-			The Placement Cell of SVCE
-		</div>
-		<div class="t-hm-s1-ttle-slgn h6 g-font-poppins g-black-clr g-fw-600">
-			“Improving employability of students”
-		</div>
-		<div class="t-hm-s1-prgh p1 g-font-maisonneue g-grey-clr text-center">
-			 FORESE aims to bridge the gap between industry and academia, inculcating leadership, vision and adaptability amongst students.
-		</div>
-	</div>
-
-
-	<div class="t-hm-sec2-bgrndimg">
-		<div class="container">
-			<div class="t-hm-s2-lnkbtn text-center">
-				<a href="about-us.html" class="g-lnkbtn-undrlnefft g-font-maisonneue t-hm-s2-lnkbtn-cstmfnt-sz g-black-clr g-fw-600">
-					<span class="g-lnkbtn-txt-lg"><b>< Click Here to Know More About Us ></b></span>
-				</a>
-			</div>
-			<div class="t-hm-sldr-ttle g-font-poppins h3 g-fw-700 g-black-clr text-center">
-			What we do?
-		    </div>
-		</div>
-		<div class="owl-wslider-box">
-			<div class="owl-carousel owl-wslider">
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr1-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									Mock Placements
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-									The Flagship preparatory event which trains candidates attending placements.
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr2-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									Group Discussion
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-									A platform to tune your communicative, leadership and subject handling skills.
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr3-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									Aptitude Assesment Test
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-									An online test where the student’s cognitive, problem solving and perceptual caliber is assessed.
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr4-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									ForEd
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-									An event to explore foreign education opportunities.
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr5-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									Upcoming events
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-                <!--View More-->
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-								<!--View More-->
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="owl-wslider-item t-hm-sldr6-bg">
-						<div class="t-hm-sldr-cnt text-left g-white-bg">
-							<div class="t-hm-sldr-cnt-wrap">
-								<div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
-									<span class="t-hm-sldr-cnt-ttle2-span">&#35;Spread</span><span class="t-hm-sldr-cnt-ttle2-span">TheWord</span>
-								</div>
-								<div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
-                <!--Contrary to popular belief, Lorem Ipsum-->
-								</div>
-								<div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
-									<!--Contrary to popular belief, Lorem Ipsum is not simply random text-->
-								</div>
-							</div>
-							<div class="t-hm-sldr-cnt-lbtn">
-								<a href="mokcs.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
-									<span class="g-lnkbtn-txt-sm"><!--View More--></span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-    		<div class="t-hm-owl-wslider-lnk text-center">
-    			<a href="work.html" class="g-lnkbtn-undrlnefft g-font-maisonneue t-hm-s2-lnkbtn-cstmfnt-sz g-black-clr g-fw-600">
-    				<span class="g-lnkbtn-txt-lg"><b>< Click Here to View More Projects ></b></span>
-    			</a>
-    		</div>
-    	</div>
-	</div>
-
-
-	<div class="container">
-		<div class="t-hm-s4-qte">
-			<div class="t-hm-s4-qte-txtcnt g-font-playfair text-center">
-				<div class="t-hm-s4-qte-txt">
-					We may not be able to offer long-term employment, but we try to offer long-term employability.” - Prof Muralidharan.<br>
-				</div>
-			</div>
-			<div class="t-hm-s4-prgrph g-font-maisonneue p1 g-grey-clr text-center">
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container-fluid t-hm-s5 t-hm-s5-climg g-black-bg text-center">
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/apple.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/android.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/apple.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/android.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
-				</a>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/apple.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/android.png" alt="client">
-				</a>
-			</div>
-			<div class="col-xs-6 col-md-3">
-				<a href="javascript: void(0);">
-					<img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
-				</a>
-			</br>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="container-fluid g-black-bg">
-		<div class="row">
-			<div class="col-md-offset-3 col-md-6">
-				<div class="t-hm-s6-lctn text-center">
-					<div class="t-hm-s6-addrs g-white-bg g-font-poppins h5 g-fw-700">
-						Pennalur Village, Bengaluru - Chennai Highway, Tk, Sriperumbudur, Tamil Nadu 602117
-					</div>
-					<div class="t-hm-s6-addrs-trangle text-center">
-						<img src="assets/img/home/sec6-location-triangle.png" alt="icon">
-					</div>
-				</div>
-			</div>
-
-			<!-- Map -->
-			<div id="gGoogleMapEmbed" class="t-hm-gmap"></div>
-		</div>
-	</div>
-
-
-
-
-
-	<script>
-
-		function gOwlWslider() {
-			// owl slider script
-			var g_windowwidth = $(window).width();
-			if (g_windowwidth > 1000) {
-				var g_windowwidth = g_windowwidth - (g_windowwidth * 0.30);
-			} else {
-				var g_windowwidth = g_windowwidth - (g_windowwidth * 0.10);
-			}
-			$(".owl-wslider .item").css("width", g_windowwidth);
-			$('.owl-wslider').owlCarousel({
-				loop: true,
-				nav: true,
-				dots: true,
-				dotsEach: true,
-				center: true,
-				autoWidth: true,
-			});
-			// End of owl slider script
-		}
-		$(function() {
-			gOwlWslider();
-		});
-		$(window).resize(function() {
-			gOwlWslider();
-		});
-	</script>
-
-
-	<!-- Map script -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AI&amp;callback=gGoogleMap"></script>
-	<!-- End of Map script -->
-
-
-</body>
-
-
+         document.addEventListener("DOMContentLoaded", function(){
+         	loader = document.getElementById('loader');
+         	loadNow(1.5);
+         });
+      </script>
+      <div id="loader"></div>
+      <div class="g-black-bg">
+         <div class="t-hm-bnr-bg-video">
+            <video autoplay loop muted playsinline>
+               <source src="assets/video/home.mp4" type="video/mp4">
+               Your browser does not support the video tag. kindly update and try again.
+            </video>
+         </div>
+         <div class="t-hm-bnr-ttleandsicons">
+            <div class="t-hm-bnr-ttle h2 g-font-poppins g-white-clr g-fw-700 g-black-clr">
+               <span>We </span>
+               <div class="t-hm-bnr-ttle-scrltxt">
+                  <span>Create </span>
+                  <span>Provide</span>
+                  <span>Inspire</span>
+                  <span>Guide</span>
+                  <span>Explore</span>
+                  <span>are FORESE.</span>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="t-hm-s1-ttle h2 g-font-poppins g-black-clr g-fw-800">
+            The Placement Cell of SVCE
+         </div>
+         <div class="t-hm-s1-ttle-slgn h6 g-font-poppins g-black-clr g-fw-600">
+            “Improving employability of students”
+         </div>
+         <div class="t-hm-s1-prgh p1 g-font-maisonneue g-grey-clr text-center">
+            FORESE aims to bridge the gap between industry and academia, inculcating leadership, vision and adaptability amongst students.
+         </div>
+      </div>
+      <div class="t-hm-sec2-bgrndimg">
+         <div class="container">
+            <div class="t-hm-s2-lnkbtn text-center">
+               <a href="about-us.html" class="g-lnkbtn-undrlnefft g-font-maisonneue t-hm-s2-lnkbtn-cstmfnt-sz g-black-clr g-fw-600">
+               <span class="g-lnkbtn-txt-lg"><b>< Click Here to Know More About Us ></b></span>
+               </a>
+            </div>
+            <div class="t-hm-sldr-ttle g-font-poppins h3 g-fw-700 g-black-clr text-center">
+               What we do?
+            </div>
+         </div>
+         <div class="owl-wslider-box">
+            <div class="owl-carousel owl-wslider">
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr1-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              Mock Placements
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              The Flagship preparatory event which trains candidates attending placements.
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr2-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              Group Discussion
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              A platform to tune your communicative, leadership and subject handling skills.
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr3-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              Aptitude Assesment Test
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              An online test where the student’s cognitive, problem solving and perceptual caliber is assessed.
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr4-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              ForEd
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              An event to explore foreign education opportunities.
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr5-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              Upcoming events
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              <!--View More-->
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                              <!--View More-->
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mocks.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="owl-wslider-item t-hm-sldr6-bg">
+                     <div class="t-hm-sldr-cnt text-left g-white-bg">
+                        <div class="t-hm-sldr-cnt-wrap">
+                           <div class="t-hm-sldr-cnt-ttle1 g-font-poppins h4 g-black-clr g-fw-800">
+                              <span class="t-hm-sldr-cnt-ttle2-span">&#35;Spread</span><span class="t-hm-sldr-cnt-ttle2-span">TheWord</span>
+                           </div>
+                           <div class="t-hm-sldr-cnt-ttle2 g-font-poppins h6 g-black-clr g-fw-600">
+                              <!--Contrary to popular belief, Lorem Ipsum-->
+                           </div>
+                           <div class="t-hm-sldr-cnt-prgrph g-font-maisonneue p2 g-grey-clr">
+                              <!--Contrary to popular belief, Lorem Ipsum is not simply random text-->
+                           </div>
+                        </div>
+                        <div class="t-hm-sldr-cnt-lbtn">
+                           <a href="mokcs.html" class="g-lnkbtn-undrlnefft g-font-maisonneue g-grey-clr p2 g-fw-600">
+                              <span class="g-lnkbtn-txt-sm">
+                                 <!--View More-->
+                              </span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="t-hm-owl-wslider-lnk text-center">
+               <a href="work.html" class="g-lnkbtn-undrlnefft g-font-maisonneue t-hm-s2-lnkbtn-cstmfnt-sz g-black-clr g-fw-600">
+               <span class="g-lnkbtn-txt-lg"><b>< Click Here to View More Projects ></b></span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="t-hm-s4-qte">
+            <div class="t-hm-s4-qte-txtcnt g-font-playfair text-center">
+               <div class="t-hm-s4-qte-txt">
+                  We may not be able to offer long-term employment, but we try to offer long-term employability.” - Prof Muralidharan.<br>
+               </div>
+            </div>
+            <div class="t-hm-s4-prgrph g-font-maisonneue p1 g-grey-clr text-center">
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid t-hm-s5 t-hm-s5-climg g-black-bg text-center">
+         <div class="row">
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/apple.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/android.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
+               </a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/apple.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/android.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
+               </a>
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/spotify.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/apple.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/android.png" alt="client">
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="javascript: void(0);">
+               <img class="img-responsive" src="assets/img/home/chrome.png" alt="client">
+               </a>
+               </br>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid g-black-bg">
+         <div class="row">
+            <div class="col-md-offset-3 col-md-6">
+               <div class="t-hm-s6-lctn text-center">
+                  <div class="t-hm-s6-addrs g-white-bg g-font-poppins h5 g-fw-700">
+                     Pennalur Village, Bengaluru - Chennai Highway, Tk, Sriperumbudur, Tamil Nadu 602117
+                  </div>
+                  <div class="t-hm-s6-addrs-trangle text-center">
+                     <img src="assets/img/home/sec6-location-triangle.png" alt="icon">
+                  </div>
+               </div>
+            </div>
+            <!-- Map -->
+            <div id="gGoogleMapEmbed" class="t-hm-gmap"></div>
+         </div>
+      </div>
+      <script>
+         function gOwlWslider() {
+         	// owl slider script
+         	var g_windowwidth = $(window).width();
+         	if (g_windowwidth > 1000) {
+         		var g_windowwidth = g_windowwidth - (g_windowwidth * 0.30);
+         	} else {
+         		var g_windowwidth = g_windowwidth - (g_windowwidth * 0.10);
+         	}
+         	$(".owl-wslider .item").css("width", g_windowwidth);
+         	$('.owl-wslider').owlCarousel({
+         		loop: true,
+         		nav: true,
+         		dots: true,
+         		dotsEach: true,
+         		center: true,
+         		autoWidth: true,
+         	});
+         	// End of owl slider script
+         }
+         $(function() {
+         	gOwlWslider();
+         });
+         $(window).resize(function() {
+         	gOwlWslider();
+         });
+      </script>
+      <!-- Map script -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AI&amp;callback=gGoogleMap"></script>
+      <!-- End of Map script -->
+   </body>
 </html>
