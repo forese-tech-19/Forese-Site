@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <style>
-      .centered {
+      .text-block {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        background-color: transparent;
+        color: white;
       }
+      
+      .myFlexedImage {
+        display: flex;
+        align-items: center;
+      }
+      
     </style>
 
     <title>Mock Placements</title>
@@ -34,16 +39,12 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="row">
-        <div class="column">
-          <img src="assetsMocks/img/slider/slide1.jpg" alt="BG Pic" style="width:100%">
-            <div class="centered" align="center">
-              <p class="fadeInUp wow text-white" data-wow-delay=".6s">FORESE</p>
-              <h1 class="wow fadeInDown heading text-white" data-wow-delay=".4s">MOCK PLACEMENTS 2020</h1>
-            </div>
-        </div>
-      </div>
+    <div class="myFlexedImage">
+      <img src="assetsMocks/img/slider/slide1.jpg" alt="BG Pic" style="width:100%">
+        <div class="text-block d-block w-100">
+          <p class="fadeInUp wow" data-wow-delay=".6s" align="center">FORESE</p>
+          <h1 class="wow fadeInDown heading" align="center" data-wow-delay=".4s">MOCK PLACEMENTS 2020</h1>
+        </div>        
     </div>
 
     <!-- Services Section Start -->
@@ -193,22 +194,22 @@
         </div>
         <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
+            <div class="spnsors-logo padding-none">
               <a href="#"><img class="img-fluid" src="assetsMocks/img/sponsors/Cognizant.png" alt=""></a>
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
+            <div class="spnsors-logo padding-none">
               <a href="#"><img class="img-fluid" src="assetsMocks/img/sponsors/Infosys.png" alt=""></a>
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
+            <div class="spnsors-logo padding-none">
               <a href="#"><img class="img-fluid" src="assetsMocks/img/sponsors/Schneider.png" alt=""></a>
             </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <div class="spnsors-logo">
+            <div class="spnsors-logo padding-none">
               <a href="#"><img class="img-fluid" src="assetsMocks/img/sponsors/TCS.jpg" alt=""></a>
             </div>
           </div>
