@@ -380,10 +380,12 @@
           <script>
             var map;
             function initMap() {
+              var svce = { lat: 12.986418, lng: 79.972457 };
               map = new google.maps.Map(document.getElementById("gGoogleMapEmbed"), {
-                center: { lat: 12.986418, lng: 79.972457 },
+                center: svce,
                 zoom: 8
               });
+              var marker = new google.maps.Marker({ position: svce, map: map });
             }
           </script>
         </div>
